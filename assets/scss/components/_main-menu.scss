@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: flex-start;
     > li {
+      position: relative;
       list-style: none;
       font-size: 0.9rem;
       > a {
@@ -21,6 +22,52 @@
           background: $primary;
           color: #ffffff;
           text-decoration: none;
+        }
+      }
+      > ul {
+        position: absolute;
+        top: calc(100% + 6px);
+        left: 0;
+        min-width: 220px;
+        padding: 8px 0;
+        margin: 0;
+        list-style: none;
+        background: #ffffff;
+        border-radius: 6px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(6px);
+        transition: opacity 150ms ease, transform 150ms ease, visibility 150ms ease;
+        z-index: 50;
+        li {
+          a {
+            display: block;
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: none;
+            color: $primary;
+            text-decoration: none;
+            white-space: nowrap;
+            &:hover {
+              background: rgba($primary, 0.08);
+              color: $primary;
+            }
+          }
+          &.active {
+            > a {
+              background: rgba($primary, 0.12);
+              color: $primary;
+            }
+          }
+        }
+      }
+      &:hover {
+        > ul {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
         }
       }
       &.active {
