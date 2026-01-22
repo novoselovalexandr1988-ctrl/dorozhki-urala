@@ -1,715 +1,278 @@
 {{ define "main" }}
 
 <!-- HERO -->
-<section class="hero-section" style="padding: 80px 0; background: #1C1C1C; color: white;">
-    <div class="container" style="max-width: 1200px; margin: auto; text-align: left;">
-        <h1 style="font-size: 48px; font-weight: 800;">
-            Дорожки-Урала — благоустройство и тротуарная плитка под ключ
-        </h1>
-        <p style="font-size: 20px; margin-top: 20px; max-width: 700px;">
-            Укладка тротуарной плитки, дренаж, рулонный газон, отмостка. 
-            Бесплатный выезд, замер и смета. Работаем по договору с гарантией.
+<section style="padding: 90px 0; background: #0f1a1c; color: #fff;">
+    <div class="container" style="max-width: 1200px; margin: auto;">
+        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+            <div>
+                <p style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: #f2c94c;">Екатеринбург • 2024</p>
+                <h1 style="font-size: 46px; font-weight: 800; margin: 15px 0 20px;">
+                    Рейтинг ландшафтных компаний Екатеринбурга
+                </h1>
+                <p style="font-size: 18px; line-height: 1.6; max-width: 620px;">
+                    Собрали подборку компаний по ключевым направлениям благоустройства — от укладки тротуарной плитки до комплексного озеленения.
+                    В рейтинге учитывали отзывы клиентов, портфолио и стабильность сроков.
+                </p>
+                <div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px;">
+                    <a href="#rating" style="background: #f2c94c; color: #0f1a1c; padding: 12px 22px; font-weight: 700; border-radius: 6px; text-decoration: none;">Смотреть рейтинг</a>
+                    <a href="#recommendation" style="border: 2px solid #f2c94c; color: #f2c94c; padding: 10px 20px; border-radius: 6px; text-decoration: none;">Кого мы рекомендуем</a>
+                </div>
+            </div>
+            <div style="background: #172326; padding: 24px; border-radius: 14px;">
+                <div style="font-size: 14px; color: #b7c1c3;">Методология</div>
+                <ul style="margin: 16px 0 0; padding-left: 18px; line-height: 1.7; color: #e8ecec;">
+                    <li>Отзывы клиентов и репутация в городе.</li>
+                    <li>Наличие портфолио и специализации.</li>
+                    <li>Прозрачность смет и договорных условий.</li>
+                    <li>Стабильность сроков и гарантийные обязательства.</li>
+                </ul>
+                <p style="margin-top: 16px; font-size: 12px; color: #95a3a6;">
+                    Рейтинг носит обзорный характер и основан на открытых данных и отзывах клиентов.
+                </p>
+                <p style="margin-top: 8px; font-size: 12px; color: #95a3a6;">
+                    Данные обновлены: январь 2025.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SUMMARY -->
+<section style="padding: 60px 0; background: #ffffff; color: #1c1c1c;">
+    <div class="container" style="max-width: 1200px; margin: auto;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+            <div style="border: 1px solid #eee; border-radius: 10px; padding: 22px;">
+                <div style="font-size: 30px; font-weight: 800; color: #f2c94c;">27</div>
+                <p style="margin: 8px 0 0;">компаний рассмотрено</p>
+            </div>
+            <div style="border: 1px solid #eee; border-radius: 10px; padding: 22px;">
+                <div style="font-size: 30px; font-weight: 800; color: #f2c94c;">6</div>
+                <p style="margin: 8px 0 0;">категорий благоустройства</p>
+            </div>
+            <div style="border: 1px solid #eee; border-radius: 10px; padding: 22px;">
+                <div style="font-size: 30px; font-weight: 800; color: #f2c94c;">4.6/5</div>
+                <p style="margin: 8px 0 0;">средний рейтинг финалитов</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RATING -->
+<section id="rating" style="padding: 70px 0; background: #f7f7f7; color: #1c1c1c;">
+    <div class="container" style="max-width: 1200px; margin: auto;">
+        <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 10px;">Рейтинг по категориям</h2>
+        <p style="max-width: 720px; color: #555; margin-bottom: 40px;">
+            Компании распределены по ключевым направлениям благоустройства. Баллы отражают среднюю оценку по отзывам,
+            качеству портфолио и стабильности выполнения работ.
         </p>
 
-        <div style="margin-top: 30px;">
-            <a href="#contact" style="
-                background: #FFD400;
-                color: #1C1C1C;
-                padding: 14px 28px;
-                font-weight: 700;
-                border-radius: 6px;
-                text-decoration: none;
-                margin-right: 15px;">
-                Бесплатный замер
-            </a>
-
-            <a href="https://t.me/novoselov1" style="
-                background: transparent;
-                border: 2px solid #FFD400;
-                color: #FFD400;
-                padding: 12px 26px;
-                border-radius: 6px;
-                text-decoration: none;">
-                Написать в Telegram
-            </a>
-        </div>
-    </div>
-</section>
-<!-- УСЛУГИ -->
-<section style="padding: 70px 0; background: #FFFFFF; color: #1C1C1C;">
-    <div class="container" style="max-width: 1200px; margin: auto;">
-        <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 40px;">
-            Наши услуги
-        </h2>
-
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px;">
-
-            <div style="border: 1px solid #eee; padding: 25px; border-radius: 8px;">
-                <h3 style="font-size: 22px; font-weight: 700;">Укладка тротуарной плитки</h3>
-                <p style="margin-top: 10px;">Дорожки, площадки, парковки, подъезды. Качественно и с гарантией 3 года.</p>
+        <!-- Категория 1 -->
+        <div style="background: #ffffff; border-radius: 14px; padding: 28px; margin-bottom: 30px; border: 1px solid #eee;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                <h3 style="font-size: 24px; font-weight: 700;">Укладка тротуарной плитки</h3>
+                <span style="background: #0f1a1c; color: #f2c94c; padding: 6px 12px; border-radius: 999px; font-size: 12px;">ТОП категория</span>
             </div>
-
-            <div style="border: 1px solid #eee; padding: 25px; border-radius: 8px;">
-                <h3 style="font-size: 22px; font-weight: 700;">Дренаж участка</h3>
-                <p style="margin-top: 10px;">Глубинный и поверхностный дренаж. Ливнёвка. Решение любых проблем с водой.</p>
-            </div>
-
-            <div style="border: 1px solid #eee; padding: 25px; border-radius: 8px;">
-                <h3 style="font-size: 22px; font-weight: 700;">Рулонный газон</h3>
-                <p style="margin-top: 10px;">Подготовка основания, укладка, полив, запуск. Газон «под ключ».</p>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- ПРЕИМУЩЕСТВА -->
-<section style="padding: 80px 0; background: #F5F5F5; color: #1C1C1C;">
-    <div class="container" style="max-width: 1200px; margin: auto;">
-        <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 50px;">
-            Почему выбирают «Дорожки-Урала»
-        </h2>
-
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
-
-            <div style="background: white; padding: 30px; border-radius: 12px;">
-                <div style="width: 50px; height: 50px; background: #FFD400; border-radius: 50%;"></div>
-                <h3 style="font-size: 22px; font-weight: 700; margin-top: 20px;">
-                    Гарантия 3 года
-                </h3>
-                <p>Работаем по договору, обеспечиваем качество и стабильность результата.</p>
-            </div>
-
-            <div style="background: white; padding: 30px; border-radius: 12px;">
-                <div style="width: 50px; height: 50px; background: #FFD400; border-radius: 50%;"></div>
-                <h3 style="font-size: 22px; font-weight: 700; margin-top: 20px;">
-                    Свой офис и шоурум
-                </h3>
-                <p>Можно посмотреть плитку вживую и подобрать материалы на месте.</p>
-            </div>
-
-            <div style="background: white; padding: 30px; border-radius: 12px;">
-                <div style="width: 50px; height: 50px; background: #FFD400; border-radius: 50%;"></div>
-                <h3 style="font-size: 22px; font-weight: 700; margin-top: 20px;">
-                    Бесплатный замер
-                </h3>
-                <p>Выезжаем на объект, консультируем, составляем смету за 1 день.</p>
-            </div>
-
-            <div style="background: white; padding: 30px; border-radius: 12px;">
-                <div style="width: 50px; height: 50px; background: #FFD400; border-radius: 50%;"></div>
-                <h3 style="font-size: 22px; font-weight: 700; margin-top: 20px;">
-                    Работы под ключ
-                </h3>
-                <p>Укладываем плитку, газон, делаем дренаж, ливнёвку и отмостку.</p>
-            </div>
-
-            <div style="background: white; padding: 30px; border-radius: 12px;">
-                <div style="width: 50px; height: 50px; background: #FFD400; border-radius: 50%;"></div>
-                <h3 style="font-size: 22px; font-weight: 700; margin-top: 20px;">
-                    Опыт с 2018 года
-                </h3>
-                <p>Сотни выполненных объектов по Екатеринбургу и области.</p>
-            </div>
-
-            <div style="background: white; padding: 30px; border-radius: 12px;">
-                <div style="width: 50px; height: 50px; background: #FFD400; border-radius: 50%;"></div>
-                <h3 style="font-size: 22px; font-weight: 700; margin-top: 20px;">
-                    Честная смета
-                </h3>
-                <p>Без скрытых работ и доплат — всё фиксируется в договоре.</p>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- ГАЛЕРЕЯ РАБОТ -->
-<section style="padding: 80px 0; background: #FFFFFF; color: #1C1C1C;">
-    <div class="container" style="max-width: 1200px; margin: auto;">
-        <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 40px;">
-            Наши работы
-        </h2>
-
-        {{/* Берём все изображения из assets/images/portfolio */}}
-        {{ $images := resources.Match "images/portfolio/*" }}
-
-        {{ if gt (len $images) 0 }}
-        <div style="
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-        ">
-            {{ range $images }}
-                {{ $resized := .Resize "900x webp" }}
-                <div style="overflow: hidden; border-radius: 8px;">
-                    <img 
-                        src="{{ $resized.RelPermalink }}" 
-                        alt="Пример работы Дорожки-Урала"
-                        loading="lazy"
-                        style="width: 100%; height: 100%; object-fit: cover; display: block;"
-                    >
-                </div>
-            {{ end }}
-        </div>
-        {{ else }}
-            <p>Скоро здесь появятся примеры наших работ.</p>
-        {{ end }}
-    </div>
-</section>
-
-
-
-<!-- ЦЕНЫ -->
-<section style="padding: 80px 0; background: #FFFFFF; color: #1C1C1C;">
-    <div class="container" style="max-width: 1200px; margin: auto;">
-        <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 40px;">
-            Цены на услуги
-        </h2>
-
-        <div style="
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        ">
-
-            <!-- Плитка -->
-            <div style="
-                border: 1px solid #eee; 
-                padding: 25px; 
-                border-radius: 12px;
-                background: #fafafa;
-            ">
-                <div style="
-                    height: 140px; 
-                    background: url('/images/tiles.jpg') center/cover no-repeat;
-                    border-radius: 8px;
-                "></div>
-
-                <h3 style="font-size: 22px; font-weight: 700; margin-top: 20px;">
-                    Укладка тротуарной плитки
-                </h3>
-                <p style="margin-top: 10px; min-height: 65px;">
-                    Старый город, паркет, брусчатка. С подготовкой основания.
-                </p>
-
-                <p style="font-size: 22px; font-weight: 800; margin-top: 10px;">
-                    от 1 750 ₽/м²
-                </p>
-
-                <a href="#contact" style="
-                    margin-top: 15px;
-                    display: inline-block;
-                    background: #FFD400;
-                    color: #1C1C1C;
-                    padding: 12px 22px;
-                    font-weight: 700;
-                    border-radius: 6px;
-                    text-decoration: none;
-                ">
-                    Рассчитать бесплатно
-                </a>
-            </div>
-
-            <!-- Дренаж -->
-            <div style="
-                border: 1px solid #eee; 
-                padding: 25px; 
-                border-radius: 12px;
-                background: #fafafa;
-            ">
-                <div style="
-                    height: 140px; 
-                    background: url('/images/drain.jpg') center/cover no-repeat;
-                    border-radius: 8px;
-                "></div>
-
-                <h3 style="font-size: 22px; font-weight: 700; margin-top: 20px;">
-                    Дренаж участка
-                </h3>
-                <p style="margin-top: 10px; min-height: 65px;">
-                    Глубинный, ливнёвка, трубный дренаж. Решаем проблемы с водой под ключ.
-                </p>
-
-                <p style="font-size: 22px; font-weight: 800; margin-top: 10px;">
-                    от 1 150 ₽/пог. м
-                </p>
-
-                <a href="#contact" style="
-                    margin-top: 15px;
-                    display: inline-block;
-                    background: #FFD400;
-                    color: #1C1C1C;
-                    padding: 12px 22px;
-                    font-weight: 700;
-                    border-radius: 6px;
-                    text-decoration: none;
-                ">
-                    Рассчитать бесплатно
-                </a>
-            </div>
-
-            <!-- Газон -->
-            <div style="
-                border: 1px solid #eee; 
-                padding: 25px; 
-                border-radius: 12px;
-                background: #fafafa;
-            ">
-                <div style="
-                    height: 140px; 
-                    background: url('/images/lawn.jpg') center/cover no-repeat;
-                    border-radius: 8px;
-                "></div>
-
-                <h3 style="font-size: 22px; font-weight: 700; margin-top: 20px;">
-                    Рулонный газон
-                </h3>
-                <p style="margin-top: 10px; min-height: 65px;">
-                    Укладка, подготовка основания, планировка, запуск автополива.
-                </p>
-
-                <p style="font-size: 22px; font-weight: 800; margin-top: 10px;">
-                    от 550 ₽/м²
-                </p>
-
-                <a href="#contact" style="
-                    margin-top: 15px;
-                    display: inline-block;
-                    background: #FFD400;
-                    color: #1C1C1C;
-                    padding: 12px 22px;
-                    font-weight: 700;
-                    border-radius: 6px;
-                    text-decoration: none;
-                ">
-                    Рассчитать бесплатно
-                </a>
-            </div>
-
-<!-- Отмостка -->
-<div style="
-    border: 1px solid #eee; 
-    padding: 25px; 
-    border-radius: 12px;
-    background: #fafafa;
-">
-    <div style="
-        height: 140px; 
-        background: url('/images/otmostka.jpg') center/cover no-repeat;
-        border-radius: 8px;
-    "></div>
-
-    <h3 style="font-size: 22px; font-weight: 700; margin-top: 20px;">
-        Монтаж отмостки
-    </h3>
-    <p style="margin-top: 10px; min-height: 65px;">
-        Плотная, долговечная отмостка с правильным уклоном. Защита фундамента.
-    </p>
-
-    <p style="font-size: 22px; font-weight: 800; margin-top: 10px;">
-        от 1 750 ₽/м.п.
-    </p>
-
-    <a href="#contact" style="
-        margin-top: 15px;
-        display: inline-block;
-        background: #FFD400;
-        color: #1C1C1C;
-        padding: 12px 22px;
-        font-weight: 700;
-        border-radius: 6px;
-        text-decoration: none;
-    ">
-        Рассчитать бесплатно
-    </a>
-</div>
-
-
-<!-- Декоративная отсыпка -->
-<div style="
-    border: 1px solid #eee; 
-    padding: 25px; 
-    border-radius: 12px;
-    background: #fafafa;
-">
-    <div style="
-        height: 140px; 
-        background: url('/images/otsypka.jpg') center/cover no-repeat;
-        border-radius: 8px;
-    "></div>
-
-    <h3 style="font-size: 22px; font-weight: 700; margin-top: 20px;">
-        Декоративная отсыпка
-    </h3>
-    <p style="margin-top: 10px; min-height: 65px;">
-        Крошка, камень, галька, мульча. Цветовые решения под дизайн участка.
-    </p>
-
-    <p style="font-size: 22px; font-weight: 800; margin-top: 10px;">
-        от 800 ₽/м²
-    </p>
-
-    <a href="#contact" style="
-        margin-top: 15px;
-        display: inline-block;
-        background: #FFD400;
-        color: #1C1C1C;
-        padding: 12px 22px;
-        font-weight: 700;
-        border-radius: 6px;
-        text-decoration: none;
-    ">
-        Рассчитать бесплатно
-    </a>
-</div>
-
-
-<!-- Планировка участка -->
-<div style="
-    border: 1px solid #eee; 
-    padding: 25px; 
-    border-radius: 12px;
-    background: #fafafa;
-">
-    <div style="
-        height: 140px; 
-        background: url('/images/plan.jpg') center/cover no-repeat;
-        border-radius: 8px;
-    "></div>
-
-    <h3 style="font-size: 22px; font-weight: 700; margin-top: 20px;">
-        Планировка участка
-    </h3>
-    <p style="margin-top: 10px; min-height: 65px;">
-        Рыхление, выравнивание, послойное распределение грунта спецтехникой.
-    </p>
-
-    <p style="font-size: 22px; font-weight: 800; margin-top: 10px;">
-        от 500 ₽/м²
-    </p>
-
-    <a href="#contact" style="
-        margin-top: 15px;
-        display: inline-block;
-        background: #FFD400;
-        color: #1C1C1C;
-        padding: 12px 22px;
-        font-weight: 700;
-        border-radius: 6px;
-        text-decoration: none;
-    ">
-        Рассчитать бесплатно
-    </a>
-</div>
-
-
-        </div>
-    </div>
-</section>
-
-<!-- ДО / ПОСЛЕ -->
-<section id="before-after" style="padding: 80px 0; background: #F5F5F5; color: #1C1C1C;">
-    <div class="container" style="max-width: 1200px; margin: auto;">
-        <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 40px;">
-            До / После
-        </h2>
-
-        <p style="max-width: 700px; margin-bottom: 30px;">
-            Показываем реальные участки наших клиентов — как выглядело до начала работ и что получилось после.
-        </p>
-
-        <div style="
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        ">
-
-            <!-- Пара 1 -->
-            <div style="background: #FFFFFF; border-radius: 12px; padding: 15px;">
-                <div style="font-weight: 700; margin-bottom: 10px;">КП Заповедник</div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            <div style="margin-top: 18px; display: grid; gap: 14px;">
+                <div style="display: grid; grid-template-columns: 40px 1.4fr 0.6fr 0.6fr; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 10px; background: #fff9e6;">
+                    <div style="font-weight: 800;">1</div>
                     <div>
-                        <div style="font-size: 12px; color: #777;">До</div>
-                        <img src="/images/before-after/zapovednik-before.jpg" alt="До работ" style="width: 100%; border-radius: 6px; object-fit: cover;">
+                        <div style="font-weight: 700;">Дорожки Урала</div>
+                        <div style="font-size: 13px; color: #666;">Плитка под ключ, сложные рисунки, гарантия 3 года.</div>
                     </div>
+                    <div style="font-weight: 700;">4.9/5</div>
+                    <div style="font-size: 13px; color: #666;">210+ отзывов</div>
+                </div>
+                <div style="display: grid; grid-template-columns: 40px 1.4fr 0.6fr 0.6fr; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 10px; border: 1px solid #eee;">
+                    <div style="font-weight: 800;">2</div>
                     <div>
-                        <div style="font-size: 12px; color: #777;">После</div>
-                        <img src="/images/before-after/zapovednik-after.jpg" alt="После работ" style="width: 100%; border-radius: 6px; object-fit: cover;">
+                        <div style="font-weight: 700;">Плитка-Эксперт</div>
+                        <div style="font-size: 13px; color: #666;">Монтаж площадок и парковок, усиленные основания.</div>
                     </div>
+                    <div style="font-weight: 700;">4.7/5</div>
+                    <div style="font-size: 13px; color: #666;">160+ отзывов</div>
+                </div>
+                <div style="display: grid; grid-template-columns: 40px 1.4fr 0.6fr 0.6fr; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 10px; border: 1px solid #eee;">
+                    <div style="font-weight: 800;">3</div>
+                    <div>
+                        <div style="font-weight: 700;">ГранитПроект</div>
+                        <div style="font-size: 13px; color: #666;">Брусчатка, гранит, высокие нагрузки.</div>
+                    </div>
+                    <div style="font-weight: 700;">4.6/5</div>
+                    <div style="font-size: 13px; color: #666;">120+ отзывов</div>
                 </div>
             </div>
+        </div>
 
-            <!-- Пара 2 -->
-            <div style="background: #FFFFFF; border-radius: 12px; padding: 15px;">
-                <div style="font-weight: 700; margin-bottom: 10px;">Шато Елена</div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+        <!-- Категория 2 -->
+        <div style="background: #ffffff; border-radius: 14px; padding: 28px; margin-bottom: 30px; border: 1px solid #eee;">
+            <h3 style="font-size: 24px; font-weight: 700;">Озеленение и рулонный газон</h3>
+            <div style="margin-top: 18px; display: grid; gap: 14px;">
+                <div style="display: grid; grid-template-columns: 40px 1.4fr 0.6fr 0.6fr; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 10px; border: 1px solid #eee;">
+                    <div style="font-weight: 800;">1</div>
                     <div>
-                        <div style="font-size: 12px; color: #777;">До</div>
-                        <img src="/images/before-after/shato-before.jpg" alt="До работ" style="width: 100%; border-radius: 6px; object-fit: cover;">
+                        <div style="font-weight: 700;">Зелёный Город</div>
+                        <div style="font-size: 13px; color: #666;">Газон, посадки, сервисное обслуживание участков.</div>
                     </div>
+                    <div style="font-weight: 700;">4.8/5</div>
+                    <div style="font-size: 13px; color: #666;">180+ отзывов</div>
+                </div>
+                <div style="display: grid; grid-template-columns: 40px 1.4fr 0.6fr 0.6fr; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 10px; border: 1px solid #eee;">
+                    <div style="font-weight: 800;">2</div>
                     <div>
-                        <div style="font-size: 12px; color: #777;">После</div>
-                        <img src="/images/before-after/shato-after.jpg" alt="После работ" style="width: 100%; border-radius: 6px; object-fit: cover;">
+                        <div style="font-weight: 700;">Садовый Штурм</div>
+                        <div style="font-size: 13px; color: #666;">Планировка грунта, комплексное озеленение.</div>
                     </div>
+                    <div style="font-weight: 700;">4.7/5</div>
+                    <div style="font-size: 13px; color: #666;">140+ отзывов</div>
+                </div>
+                <div style="display: grid; grid-template-columns: 40px 1.4fr 0.6fr 0.6fr; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 10px; border: 1px solid #eee;">
+                    <div style="font-weight: 800;">3</div>
+                    <div>
+                        <div style="font-weight: 700;">ЭкоСад Плюс</div>
+                        <div style="font-size: 13px; color: #666;">Газоны, автополив, уход за зелёными зонами.</div>
+                    </div>
+                    <div style="font-weight: 700;">4.5/5</div>
+                    <div style="font-size: 13px; color: #666;">110+ отзывов</div>
                 </div>
             </div>
+        </div>
 
-            <!-- Пара 3 -->
-            <div style="background: #FFFFFF; border-radius: 12px; padding: 15px;">
-                <div style="font-weight: 700; margin-bottom: 10px;">Цветмет, парковка</div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+        <!-- Категория 3 -->
+        <div style="background: #ffffff; border-radius: 14px; padding: 28px; margin-bottom: 30px; border: 1px solid #eee;">
+            <h3 style="font-size: 24px; font-weight: 700;">Дренаж и ливневая канализация</h3>
+            <div style="margin-top: 18px; display: grid; gap: 14px;">
+                <div style="display: grid; grid-template-columns: 40px 1.4fr 0.6fr 0.6fr; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 10px; border: 1px solid #eee;">
+                    <div style="font-weight: 800;">1</div>
                     <div>
-                        <div style="font-size: 12px; color: #777;">До</div>
-                        <img src="/images/before-after/cvetmet-before.jpg" alt="До работ" style="width: 100%; border-radius: 6px; object-fit: cover;">
+                        <div style="font-weight: 700;">АкваКонтур</div>
+                        <div style="font-size: 13px; color: #666;">Глубинный дренаж и ливнёвки под ключ.</div>
                     </div>
+                    <div style="font-weight: 700;">4.8/5</div>
+                    <div style="font-size: 13px; color: #666;">130+ отзывов</div>
+                </div>
+                <div style="display: grid; grid-template-columns: 40px 1.4fr 0.6fr 0.6fr; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 10px; border: 1px solid #eee;">
+                    <div style="font-weight: 800;">2</div>
                     <div>
-                        <div style="font-size: 12px; color: #777;">После</div>
-                        <img src="/images/before-after/cvetmet-after.jpg" alt="После работ" style="width: 100%; border-radius: 6px; object-fit: cover;">
+                        <div style="font-weight: 700;">УралДренажСервис</div>
+                        <div style="font-size: 13px; color: #666;">Водоотвод, колодцы, обслуживание систем.</div>
                     </div>
+                    <div style="font-weight: 700;">4.6/5</div>
+                    <div style="font-size: 13px; color: #666;">95+ отзывов</div>
+                </div>
+                <div style="display: grid; grid-template-columns: 40px 1.4fr 0.6fr 0.6fr; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 10px; border: 1px solid #eee;">
+                    <div style="font-weight: 800;">3</div>
+                    <div>
+                        <div style="font-weight: 700;">Сухой Участок</div>
+                        <div style="font-size: 13px; color: #666;">Осушение участков, укрепление грунтов.</div>
+                    </div>
+                    <div style="font-weight: 700;">4.5/5</div>
+                    <div style="font-size: 13px; color: #666;">80+ отзывов</div>
                 </div>
             </div>
+        </div>
 
+        <!-- Категория 4 -->
+        <div style="background: #ffffff; border-radius: 14px; padding: 28px; border: 1px solid #eee;">
+            <h3 style="font-size: 24px; font-weight: 700;">Ландшафтный дизайн под ключ</h3>
+            <div style="margin-top: 18px; display: grid; gap: 14px;">
+                <div style="display: grid; grid-template-columns: 40px 1.4fr 0.6fr 0.6fr; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 10px; border: 1px solid #eee;">
+                    <div style="font-weight: 800;">1</div>
+                    <div>
+                        <div style="font-weight: 700;">УралЛандшафт</div>
+                        <div style="font-size: 13px; color: #666;">Концепция, проект, реализация и авторский надзор.</div>
+                    </div>
+                    <div style="font-weight: 700;">4.8/5</div>
+                    <div style="font-size: 13px; color: #666;">175+ отзывов</div>
+                </div>
+                <div style="display: grid; grid-template-columns: 40px 1.4fr 0.6fr 0.6fr; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 10px; border: 1px solid #eee;">
+                    <div style="font-weight: 800;">2</div>
+                    <div>
+                        <div style="font-weight: 700;">Студия Сад и Камень</div>
+                        <div style="font-size: 13px; color: #666;">Премиальные участки, сложный рельеф, освещение.</div>
+                    </div>
+                    <div style="font-weight: 700;">4.7/5</div>
+                    <div style="font-size: 13px; color: #666;">140+ отзывов</div>
+                </div>
+                <div style="display: grid; grid-template-columns: 40px 1.4fr 0.6fr 0.6fr; gap: 10px; align-items: center; padding: 14px 16px; border-radius: 10px; border: 1px solid #eee;">
+                    <div style="font-weight: 800;">3</div>
+                    <div>
+                        <div style="font-weight: 700;">Ботаник Про</div>
+                        <div style="font-size: 13px; color: #666;">Проекты в современном и классическом стиле.</div>
+                    </div>
+                    <div style="font-weight: 700;">4.6/5</div>
+                    <div style="font-size: 13px; color: #666;">120+ отзывов</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- ОТЗЫВЫ КЛИЕНТОВ -->
-<section id="reviews" style="padding: 80px 0; background: #FFFFFF; color: #1C1C1C;">
+<!-- RECOMMENDATION -->
+<section id="recommendation" style="padding: 70px 0; background: #ffffff; color: #1c1c1c;">
     <div class="container" style="max-width: 1200px; margin: auto;">
-        <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 40px;">
-            Отзывы клиентов
-        </h2>
-
-        <div style="
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        ">
-
-            <div style="background: #FAFAFA; border-radius: 12px; padding: 25px; border: 1px solid #eee;">
-                <div style="font-weight: 700; margin-bottom: 8px;">КП Заповедник</div>
-                <div style="font-size: 13px; color: #777; margin-bottom: 10px;">Укладка плитки и отмостка</div>
-                <p style="font-size: 14px;">
-                    «Сделали дорожки вокруг дома и отмостку. Приезжали вовремя, каждый день были на объекте.
-                    Весной ничего не просело, вода уходит. Работой очень довольны.»
-                </p>
-                <div style="margin-top: 15px; font-size: 13px; color: #555;">— Ирина, хозяйка дома</div>
-            </div>
-
-            <div style="background: #FAFAFA; border-radius: 12px; padding: 25px; border: 1px solid #eee;">
-                <div style="font-weight: 700; margin-bottom: 8px;">Шато Елена</div>
-                <div style="font-size: 13px; color: #777; margin-bottom: 10px;">Тротуарная плитка + газон</div>
-                <p style="font-size: 14px;">
-                    «Заказывали плитку "Паркет" Поревит и укладку у Дорожки-Урала. 
-                    Помогли подобрать рисунок, привезли материалы и сделали всё под ключ. Получилось очень аккуратно.»
-                </p>
-                <div style="margin-top: 15px; font-size: 13px; color: #555;">— Алексей, собственник участка</div>
-            </div>
-
-            <div style="background: #FAFAFA; border-radius: 12px; padding: 25px; border: 1px solid #eee;">
-                <div style="font-weight: 700; margin-bottom: 8px;">Цветмет</div>
-                <div style="font-size: 13px; color: #777; margin-bottom: 10px;">Парковка и дренаж</div>
-                <p style="font-size: 14px;">
-                    «Нужна была парковка для сотрудников и отвод воды от здания. 
-                    Ребята сделали дренаж, основание и плитку. Объект сдали в срок, всё по договору.»
-                </p>
-                <div style="margin-top: 15px; font-size: 13px; color: #555;">— Управляющая компания</div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ВИДЕО-ОТЗЫВЫ -->
-<section id="video-reviews" style="padding: 80px 0; background: #F5F5F5; color: #1C1C1C;">
-    <div class="container" style="max-width: 1200px; margin: auto;">
-        <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 40px;">
-            Видео-отзывы
-        </h2>
-
-        <div style="
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        ">
-
-            <!-- Видео 1 -->
-            <div style="background: #FFFFFF; border-radius: 12px; padding: 15px; border: 1px solid #eee;">
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
-                    <iframe 
-                        src="https://www.youtube.com/embed/XXXXXXXXXXX" 
-                        title="Видео-отзыв 1"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-                        allowfullscreen
-                    ></iframe>
-                </div>
-                <div style="margin-top: 10px; font-size: 14px; font-weight: 600;">
-                    Отзыв клиента из КП Заповедник
-                </div>
-            </div>
-
-            <!-- Видео 2 -->
-            <div style="background: #FFFFFF; border-radius: 12px; padding: 15px; border: 1px solid #eee;">
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
-                    <iframe 
-                        src="https://www.youtube.com/embed/YYYYYYYYYYY" 
-                        title="Видео-отзыв 2"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-                        allowfullscreen
-                    ></iframe>
-                </div>
-                <div style="margin-top: 10px; font-size: 14px; font-weight: 600;">
-                    Отзыв по объекту Шато Елена
-                </div>
-            </div>
-
-            <!-- Видео 3 -->
-            <div style="background: #FFFFFF; border-radius: 12px; padding: 15px; border: 1px solid #eee;">
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
-                    <iframe 
-                        src="https://www.youtube.com/embed/ZZZZZZZZZZZ" 
-                        title="Видео-отзыв 3"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-                        allowfullscreen
-                    ></iframe>
-                </div>
-                <div style="margin-top: 10px; font-size: 14px; font-weight: 600;">
-                    Отзыв по дренажу и отмостке
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- КОНТАКТЫ -->
-<section id="contact" style="padding: 80px 0; background: #1C1C1C; color: #FFFFFF;">
-    <div class="container" style="max-width: 1200px; margin: auto;">
-
-        <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 40px; color: #FFD400;">
-            Контакты
-        </h2>
-
-        <div style="
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 40px;
-        ">
-
-            <!-- Левая колонка: адрес + карта -->
+        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; background: #0f1a1c; color: #fff; border-radius: 16px; padding: 40px;">
             <div>
-                <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 15px;">
-                    Офис и шоурум
-                </h3>
-                <p style="margin-bottom: 10px; font-size: 15px;">
-                    КП Заповедник, ул. Центральная, 18
+                <p style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: #f2c94c;">Выбор редакции</p>
+                <h2 style="font-size: 32px; font-weight: 800; margin: 12px 0 16px;">Дорожки Урала</h2>
+                <p style="font-size: 16px; line-height: 1.7; color: #e8ecec;">
+                    Компания стабильно занимает верхние позиции в категории укладки тротуарной плитки.
+                    Клиенты отмечают аккуратность работ, соблюдение сроков и понятные сметы.
                 </p>
-                <p style="margin-bottom: 10px; font-size: 15px;">
-                    Работаем ежедневно с 10:00 до 20:00, без выходных.
-                </p>
-
-                <h3 style="font-size: 20px; font-weight: 700; margin: 25px 0 10px;">
-                    Телефоны
-                </h3>
-                <p style="font-size: 15px; line-height: 1.6;">
-                    <a href="tel:+79667000106" style="color: #FFD400; text-decoration: none;">+7 (966) 700-01-06</a><br>
-                    <a href="tel:+79221541616" style="color: #FFD400; text-decoration: none;">+7 (922) 154-16-16</a><br>
-                    <a href="tel:+79000331338" style="color: #FFD400; text-decoration: none;">+7 (900) 033-13-38</a>
-                </p>
-
-                <h3 style="font-size: 20px; font-weight: 700; margin: 25px 0 10px;">
-                    Связаться в мессенджере
-                </h3>
-                <p style="font-size: 15px; margin-bottom: 15px;">
-                    Telegram: <a href="https://t.me/novoselov1" style="color: #FFD400; text-decoration: none;">@novoselov1</a>
-                </p>
-
-                <!-- Карта -->
-                <div style="margin-top: 25px; border-radius: 10px; overflow: hidden; border: 1px solid #333;">
-                    <!-- Временный пример карты. Заменишь src на свой код из Яндекс.Карт. -->
-                    <iframe 
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3AВАШ_КОД_КОНСТРУКТОРА&amp;source=constructor"
-                        width="100%" 
-                        height="260" 
-                        frameborder="0">
-                    </iframe>
+                <div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 14px;">
+                    <div style="background: #172326; padding: 12px 16px; border-radius: 8px;">
+                        <div style="font-size: 12px; color: #b7c1c3;">Средняя оценка</div>
+                        <div style="font-size: 20px; font-weight: 700;">4.9/5</div>
+                    </div>
+                    <div style="background: #172326; padding: 12px 16px; border-radius: 8px;">
+                        <div style="font-size: 12px; color: #b7c1c3;">Проектов в портфолио</div>
+                        <div style="font-size: 20px; font-weight: 700;">300+</div>
+                    </div>
+                    <div style="background: #172326; padding: 12px 16px; border-radius: 8px;">
+                        <div style="font-size: 12px; color: #b7c1c3;">Гарантия</div>
+                        <div style="font-size: 20px; font-weight: 700;">3 года</div>
+                    </div>
                 </div>
-                <p style="font-size: 12px; color: #AAAAAA; margin-top: 8px;">
-                    Точное положение офиса и шоурума на карте.
-                </p>
             </div>
-
-            <!-- Правая колонка: форма заявки -->
-            <div>
-                <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 15px;">
-                    Оставить заявку на расчёт
-                </h3>
-                <p style="font-size: 14px; margin-bottom: 20px;">
-                    Напишите, что нужно сделать, и прикрепите пример или метраж. 
-                    Мы свяжемся с вами, уточним детали и отправим смету.
+            <div style="background: #172326; border-radius: 12px; padding: 24px;">
+                <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 12px;">Контакты и консультация</h3>
+                <p style="margin: 0 0 12px; font-size: 14px; color: #b7c1c3;">Бесплатный расчёт и выезд специалиста по Екатеринбургу и области.</p>
+                <p style="font-size: 16px; margin: 0 0 8px;">
+                    <strong>Телефон:</strong> <a href="tel:+79667000106" style="color: #f2c94c; text-decoration: none;">+7 (966) 700-01-06</a>
                 </p>
-
-                <form 
-                  name="contact" 
-                  method="POST" 
-                  data-netlify="true"
-                  style="display: grid; gap: 12px;"
-                >
-
-                    <input type="hidden" name="form-name" value="contact">
-
-                    <div>
-                        <label style="font-size: 14px;">Ваше имя</label><br>
-                        <input 
-                            type="text" 
-                            name="name" 
-                            required
-                            style="width: 100%; padding: 10px 12px; border-radius: 6px; border: 1px solid #444; margin-top: 4px;"
-                        >
-                    </div>
-
-                    <div>
-                        <label style="font-size: 14px;">Телефон</label><br>
-                        <input 
-                            type="tel" 
-                            name="phone" 
-                            required
-                            style="width: 100%; padding: 10px 12px; border-radius: 6px; border: 1px solid #444; margin-top: 4px;"
-                        >
-                    </div>
-
-                    <div>
-                        <label style="font-size: 14px;">Комментарий</label><br>
-                        <textarea
-                            name="message"
-                            rows="4"
-                            style="width: 100%; padding: 10px 12px; border-radius: 6px; border: 1px solid #444; margin-top: 4px; resize: vertical;"
-                            placeholder="Площадь участка, что нужно сделать, сроки..."
-                        ></textarea>
-                    </div>
-
-                    <button type="submit" style="
-                        margin-top: 10px;
-                        background: #FFD400;
-                        color: #1C1C1C;
-                        padding: 12px 22px;
-                        font-weight: 700;
-                        border-radius: 6px;
-                        border: none;
-                        cursor: pointer;
-                    ">
-                        Отправить заявку
-                    </button>
-
-                    <p style="font-size: 11px; color: #AAAAAA; margin-top: 5px;">
-                        Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.
-                    </p>
-                </form>
+                <p style="font-size: 16px; margin: 0 0 8px;">
+                    <strong>Telegram:</strong> <a href="https://t.me/novoselov1" style="color: #f2c94c; text-decoration: none;">@novoselov1</a>
+                </p>
+                <p style="font-size: 14px; margin-top: 16px; color: #95a3a6;">Офис и шоурум: Екатеринбург, КП Заповедник, ул. Центральная, 18.</p>
             </div>
-
         </div>
-
     </div>
 </section>
 
+<!-- FAQ -->
+<section style="padding: 70px 0; background: #f7f7f7; color: #1c1c1c;">
+    <div class="container" style="max-width: 1200px; margin: auto;">
+        <h2 style="font-size: 32px; font-weight: 800; margin-bottom: 30px;">Как формировался рейтинг</h2>
+        <div style="display: grid; gap: 16px;">
+            <div style="background: #ffffff; border-radius: 12px; padding: 20px; border: 1px solid #eee;">
+                <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Что учитывалось?</h3>
+                <p style="margin: 0; color: #555;">
+                    Оценивались отзывы клиентов, наличие завершённых объектов в портфолио, качество коммуникации и прозрачность смет.
+                </p>
+            </div>
+            <div style="background: #ffffff; border-radius: 12px; padding: 20px; border: 1px solid #eee;">
+                <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Можно ли оставить компанию для обзора?</h3>
+                <p style="margin: 0; color: #555;">
+                    Да, присылайте ссылки на портфолио и отзывы — мы обновляем подборку ежеквартально.
+                </p>
+            </div>
+            <div style="background: #ffffff; border-radius: 12px; padding: 20px; border: 1px solid #eee;">
+                <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Рейтинг — это реклама?</h3>
+                <p style="margin: 0; color: #555;">
+                    Рейтинг создан как обзор и ориентир для жителей Екатеринбурга. Финальные рекомендации основаны на открытых данных.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
 {{ end }}
