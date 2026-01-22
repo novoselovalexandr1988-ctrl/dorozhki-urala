@@ -11,7 +11,8 @@
       </div>
 
       {{ $category := .Params.category }}
-      {{ $section := where site.Data.where_to_buy.sections "key" $category | first }}
+      {{ $matches := where site.Data.where_to_buy.sections "key" $category }}
+      {{ $section := index $matches 0 }}
       <h2>Таблица поставщиков (заготовка)</h2>
       <p style="color: #666; font-size: 0.95rem;">
         Список носит справочный характер и может обновляться по мере поступления данных.
@@ -27,14 +28,16 @@
           </tr>
         </thead>
         <tbody>
-          {{ range $section.vendors }}
-            <tr>
-              <td>{{ .name }}</td>
-              <td>{{ .city }}</td>
-              <td>{{ .specialization }}</td>
-              <td>{{ .contacts }}</td>
-              <td>Заготовка</td>
-            </tr>
+          {{ if $section }}
+            {{ range $section.vendors }}
+              <tr>
+                <td>{{ .name }}</td>
+                <td>{{ .city }}</td>
+                <td>{{ .specialization }}</td>
+                <td>{{ .contacts }}</td>
+                <td>Заготовка</td>
+              </tr>
+            {{ end }}
           {{ end }}
         </tbody>
       </table>
