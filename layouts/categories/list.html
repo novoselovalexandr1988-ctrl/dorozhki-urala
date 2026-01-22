@@ -2,24 +2,21 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12 col-md-9">
+      {{ .Scratch.Set "breadcrumbs" (slice (dict "title" "Главная" "url" "/rating/") (dict "title" "Категории" "url" "")) }}
+      {{ partial "breadcrumbs.html" . }}
       <h1>{{ .Title }}</h1>
       <p class="lead">{{ .Params.description }}</p>
       <div class="content">
         {{ .Content }}
       </div>
-      <div class="row">
+      <div class="card-grid">
         {{ range .Pages }}
-          <div class="col-12 col-md-6 mb-4">
-            <div class="service service-summary">
-              <div class="service-content">
-                <p class="service-title">Категория</p>
-                <h2 class="service-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                <p>{{ .Params.description }}</p>
-                <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-                  <a class="button button-primary" href="{{ .RelPermalink }}">Смотреть компании</a>
-                  <a class="button button-white" href="/reviews/">Оставить отзыв</a>
-                </div>
-              </div>
+          <div class="card">
+            <div class="card-title">{{ .Title }}</div>
+            <div class="card-meta">{{ .Params.description }}</div>
+            <div class="card-actions">
+              <a class="button button-primary" href="{{ .RelPermalink }}">Смотреть рейтинг</a>
+              <a class="button button-white" href="/reviews/">Оставить отзыв</a>
             </div>
           </div>
         {{ end }}

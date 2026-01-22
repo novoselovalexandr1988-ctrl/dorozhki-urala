@@ -1,0 +1,13 @@
+{{ $crumbs := .Scratch.Get "breadcrumbs" }}
+{{ if $crumbs }}
+  <nav class="breadcrumbs" aria-label="breadcrumb">
+    {{ range $index, $crumb := $crumbs }}
+      {{ if $index }}<span>/</span>{{ end }}
+      {{ if $crumb.url }}
+        <a href="{{ $crumb.url }}">{{ $crumb.title }}</a>
+      {{ else }}
+        <span>{{ $crumb.title }}</span>
+      {{ end }}
+    {{ end }}
+  </nav>
+{{ end }}

@@ -2,6 +2,8 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12 col-md-9">
+      {{ .Scratch.Set "breadcrumbs" (slice (dict "title" "Главная" "url" "/rating/") (dict "title" "Статьи" "url" "/blog/") (dict "title" .Title "url" "")) }}
+      {{ partial "breadcrumbs.html" . }}
       <h1>{{ .Title }}</h1>
       <p class="lead">{{ .Params.description }}</p>
       <div class="content">
@@ -12,18 +14,17 @@
       {{ $companies := where site.Data.companies.companies "category" $category }}
       {{ if $companies }}
         <h2>Компании по теме статьи</h2>
-        <div class="row">
+        <div class="card-grid">
           {{ range $companies }}
-            <div class="col-12 mb-3">
-              <div class="service service-summary">
-                <div class="service-content">
-                  <h3 class="service-title">{{ .name }}</h3>
-                  <p>{{ .description }}</p>
-                  <p><strong>Рейтинг:</strong> {{ .rating }} / 5 · <strong>Отзывы:</strong> {{ .reviews_count }}</p>
-                  {{ if .url }}
-                    <a class="button button-primary" href="{{ .url }}" rel="noopener">Сайт компании</a>
-                  {{ end }}
-                </div>
+            <div class="card">
+              <div class="card-title">{{ .name }}</div>
+              <div class="card-meta">{{ .description }}</div>
+              <p><strong>Рейтинг:</strong> {{ .rating }} / 5 · <strong>Отзывы:</strong> {{ .reviews_count }}</p>
+              <div class="card-actions">
+                {{ if .url }}
+                  <a class="button button-primary" href="{{ .url }}" rel="noopener">Сайт компании</a>
+                {{ end }}
+                <a class="button button-white" href="/reviews/?company={{ .name | urlquery }}">Оставить отзыв</a>
               </div>
             </div>
           {{ end }}

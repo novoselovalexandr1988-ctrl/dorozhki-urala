@@ -1,0 +1,72 @@
+<section class="hero-section" style="padding: 80px 0; background: #0f1a1c; color: #ffffff;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-7">
+        <p style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: #f2c94c;">
+          Екатеринбург • Рейтинг благоустройства
+        </p>
+        <h1>Рейтинг ландшафтных компаний Екатеринбурга</h1>
+        <p class="lead" style="color: #dbe2e4;">
+          Проект собирает открытые данные и отзывы клиентов, чтобы помочь выбрать подрядчиков по ключевым направлениям:
+          тротуарная плитка, дренаж, газон и ландшафт под ключ.
+        </p>
+        <div class="card-actions">
+          <a class="button button-primary" href="/categories/">Смотреть категории</a>
+          <a class="button button-white" href="/reviews/">Оставить отзыв</a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="card" style="background: #172326; border-color: #1d2b2f;">
+          <p style="font-size: 0.9rem; color: #b7c1c3;">Как формируется рейтинг</p>
+          <ul style="padding-left: 18px; color: #e8ecec;">
+            <li>Открытые отзывы и репутация.</li>
+            <li>Портфолио и специализация.</li>
+            <li>Прозрачность смет и договоров.</li>
+            <li>Стабильность сроков.</li>
+          </ul>
+          <p style="font-size: 0.85rem; color: #95a3a6; margin-bottom: 0;">
+            Рейтинг носит справочный характер и обновляется по мере поступления данных.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 60px 0;">
+  <div class="container">
+    <h2>Категории рейтинга</h2>
+    <div class="card-grid">
+      {{ range site.Data.categories.categories }}
+        <div class="card">
+          <div class="card-title">{{ .title }}</div>
+          <div class="card-meta">{{ .description }}</div>
+          <div class="card-actions">
+            <a class="button button-primary" href="{{ .url }}">Смотреть рейтинг</a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section style="padding: 60px 0; background: #f7f7f7;">
+  <div class="container">
+    <h2>Топ компаний по ключевым направлениям</h2>
+    <div class="card-grid">
+      {{ range where site.Data.companies.companies "highlight" true }}
+        <div class="card">
+          <div class="card-title">{{ .name }}</div>
+          <div class="card-meta">{{ .description }}</div>
+          <p><strong>Рейтинг:</strong> {{ .rating }} / 5 · <strong>Отзывы:</strong> {{ .reviews_count }}</p>
+          <div class="card-actions">
+            {{ if .url }}
+              <a class="button button-primary" href="{{ .url }}" rel="noopener">Сайт компании</a>
+            {{ end }}
+            <a class="button button-white" href="/reviews/?company={{ .name | urlquery }}">Оставить отзыв</a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -1,7 +1,9 @@
 {{ define "main" }}
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-9">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-9">
+      {{ .Scratch.Set "breadcrumbs" (slice (dict "title" "Главная" "url" "/rating/") (dict "title" "О проекте" "url" "")) }}
+      {{ partial "breadcrumbs.html" . }}
       <h1>{{ .Title }}</h1>
       <p class="lead">{{ .Params.description }}</p>
       <div class="content">
@@ -9,7 +11,7 @@
       </div>
 
       <h2>Связаться с нами</h2>
-      <form name="about-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <form name="about-contact" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="about-contact">
         <p hidden>
           <label>Don’t fill this out: <input name="bot-field"></label>

@@ -33,7 +33,7 @@ theme = "hugo-hero-theme"
 
 [[menu.main]]
     name = "Рейтинг"
-    url = "/"
+    url = "/rating/"
     weight = 1
 
 [[menu.main]]
@@ -88,7 +88,7 @@ theme = "hugo-hero-theme"
 
 [[menu.main]]
     name = "Рейтинг дизайнеров"
-    url = "/rating/designers/"
+    url = "/designers/"
     weight = 7
 
 [permalinks]

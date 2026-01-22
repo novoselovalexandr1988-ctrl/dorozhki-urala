@@ -2,7 +2,8 @@
   <ul>
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-      {{ $isActive := or ($currentPage.IsMenuCurrent "main" .) (eq $currentPage.RelPermalink .URL) }}
+      {{ $isRatingHome := and (eq $currentPage.RelPermalink "/") (eq .URL "/rating/") }}
+      {{ $isActive := or $isRatingHome ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (eq $currentPage.RelPermalink .URL) }}
       <li class="menu-item-{{ .Name | lower }}{{ if $isActive }} active{{ end }}">
         <a href="{{ .URL }}">
           {{ .Pre }}

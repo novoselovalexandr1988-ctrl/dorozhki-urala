@@ -2,20 +2,23 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12 col-md-9">
+      {{ .Scratch.Set "breadcrumbs" (slice (dict "title" "Главная" "url" "/rating/") (dict "title" "Где покупать материал" "url" "")) }}
+      {{ partial "breadcrumbs.html" . }}
       <h1>{{ .Title }}</h1>
       <p class="lead">{{ .Params.description }}</p>
       <div class="content">
         {{ .Content }}
       </div>
-      <div class="row">
-        {{ range .Pages }}
-          <div class="col-12 col-md-6 mb-4">
-            <div class="service service-summary">
-              <div class="service-content">
-                <h2 class="service-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                <p>{{ .Params.description }}</p>
-                <a class="button button-primary" href="{{ .RelPermalink }}">Смотреть список</a>
-              </div>
+      <p style="color: #666; font-size: 0.95rem;">
+        Подборки носят справочный характер. Перед покупкой проверяйте условия доставки, сертификаты и гарантийные обязательства.
+      </p>
+      <div class="card-grid">
+        {{ range site.Data.where_to_buy.sections }}
+          <div class="card">
+            <div class="card-title">{{ .title }}</div>
+            <div class="card-meta">{{ .description }}</div>
+            <div class="card-actions">
+              <a class="button button-primary" href="{{ .url }}">Смотреть список</a>
             </div>
           </div>
         {{ end }}

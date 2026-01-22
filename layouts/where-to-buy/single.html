@@ -2,13 +2,20 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12 col-md-9">
+      {{ .Scratch.Set "breadcrumbs" (slice (dict "title" "Главная" "url" "/rating/") (dict "title" "Где покупать материал" "url" "/where-to-buy/") (dict "title" .Title "url" "")) }}
+      {{ partial "breadcrumbs.html" . }}
       <h1>{{ .Title }}</h1>
       <p class="lead">{{ .Params.description }}</p>
       <div class="content">
         {{ .Content }}
       </div>
 
+      {{ $category := .Params.category }}
+      {{ $section := where site.Data.where_to_buy.sections "key" $category | first }}
       <h2>Таблица поставщиков (заготовка)</h2>
+      <p style="color: #666; font-size: 0.95rem;">
+        Список носит справочный характер и может обновляться по мере поступления данных.
+      </p>
       <table>
         <thead>
           <tr>
@@ -20,41 +27,15 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Поставщик 1</td>
-            <td>Екатеринбург</td>
-            <td>Категория</td>
-            <td>Телефон/сайт</td>
-            <td>Заготовка</td>
-          </tr>
-          <tr>
-            <td>Поставщик 2</td>
-            <td>Екатеринбург</td>
-            <td>Категория</td>
-            <td>Телефон/сайт</td>
-            <td>Заготовка</td>
-          </tr>
-          <tr>
-            <td>Поставщик 3</td>
-            <td>Екатеринбург</td>
-            <td>Категория</td>
-            <td>Телефон/сайт</td>
-            <td>Заготовка</td>
-          </tr>
-          <tr>
-            <td>Поставщик 4</td>
-            <td>Екатеринбург</td>
-            <td>Категория</td>
-            <td>Телефон/сайт</td>
-            <td>Заготовка</td>
-          </tr>
-          <tr>
-            <td>Поставщик 5</td>
-            <td>Екатеринбург</td>
-            <td>Категория</td>
-            <td>Телефон/сайт</td>
-            <td>Заготовка</td>
-          </tr>
+          {{ range $section.vendors }}
+            <tr>
+              <td>{{ .name }}</td>
+              <td>{{ .city }}</td>
+              <td>{{ .specialization }}</td>
+              <td>{{ .contacts }}</td>
+              <td>Заготовка</td>
+            </tr>
+          {{ end }}
         </tbody>
       </table>
     </div>

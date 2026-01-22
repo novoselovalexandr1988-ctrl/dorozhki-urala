@@ -5,6 +5,7 @@ companies:
     reviews_count: 210
     description: "Укладка плитки под ключ, сложные рисунки, гарантия 3 года."
     url: "https://dorozhki-urala.ru"
+    highlight: true
   - name: "Плитка-Эксперт"
     category: "paving"
     rating: 4.7
@@ -20,6 +21,7 @@ companies:
     rating: 4.8
     reviews_count: 180
     description: "Рулонный газон, посадки, обслуживание участков."
+    highlight: true
   - name: "Садовый Штурм"
     category: "lawn"
     rating: 4.7
@@ -35,6 +37,7 @@ companies:
     rating: 4.8
     reviews_count: 130
     description: "Глубинный дренаж и ливнёвки под ключ."
+    highlight: true
   - name: "УралДренажСервис"
     category: "drainage"
     rating: 4.6
@@ -50,6 +53,7 @@ companies:
     rating: 4.8
     reviews_count: 175
     description: "Концепция, проект, реализация и авторский надзор."
+    highlight: true
   - name: "Студия Сад и Камень"
     category: "landscaping"
     rating: 4.7

@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-9">
+      {{ .Scratch.Set "breadcrumbs" (slice (dict "title" "Главная" "url" "/rating/") (dict "title" "Рейтинг дизайнеров" "url" "")) }}
+      {{ partial "breadcrumbs.html" . }}
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.description }}</p>
+      <div class="content">
+        {{ .Content }}
+      </div>
+
+      <div class="card-grid">
+        {{ range $index, $designer := site.Data.designers.designers }}
+          <div class="card">
+            <div class="card-title">{{ add $index 1 }}. {{ $designer.name }}</div>
+            <div class="card-meta">{{ $designer.description }}</div>
+            <p><strong>Рейтинг:</strong> {{ $designer.rating }} / 5 · <strong>Отзывы:</strong> {{ $designer.reviews_count }}</p>
+            <div class="card-actions">
+              {{ if $designer.url }}
+                <a class="button button-primary" href="{{ $designer.url }}" rel="noopener">Сайт студии</a>
+              {{ end }}
+              <a class="button button-white" href="/reviews/?company={{ $designer.name | urlquery }}">Оставить отзыв</a>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

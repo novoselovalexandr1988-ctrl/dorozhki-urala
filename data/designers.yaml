@@ -2,20 +2,25 @@ designers:
   - name: "Ланди"
     url: "https://lan-di.ru/"
     rating: 4.9
+    reviews_count: 128
     description: "Ландшафтные проекты под ключ, авторский надзор."
   - name: "Садовая Линия"
     url: ""
     rating: 4.7
+    reviews_count: 94
     description: "Частные участки, современные решения, подбор материалов."
   - name: "АрхСад"
     url: ""
     rating: 4.6
+    reviews_count: 78
     description: "Проектирование, визуализации, планировочные решения."
   - name: "Зелёный Контур"
     url: ""
     rating: 4.5
+    reviews_count: 66
     description: "Озеленение и дизайн для сложных рельефов."
   - name: "Студия Рельеф"
     url: ""
     rating: 4.4
+    reviews_count: 52
     description: "Концепции участков и сопровождение реализации."

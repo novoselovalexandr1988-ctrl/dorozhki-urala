@@ -1,0 +1,16 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+  color: $gray-600;
+  a {
+    color: $gray-600;
+    text-decoration: none;
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+}
