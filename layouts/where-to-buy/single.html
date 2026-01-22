@@ -1,0 +1,63 @@
+{{ define "main" }}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-9">
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.description }}</p>
+      <div class="content">
+        {{ .Content }}
+      </div>
+
+      <h2>Таблица поставщиков (заготовка)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Компания</th>
+            <th>Город/склад</th>
+            <th>Специализация</th>
+            <th>Контакты</th>
+            <th>Комментарий</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Поставщик 1</td>
+            <td>Екатеринбург</td>
+            <td>Категория</td>
+            <td>Телефон/сайт</td>
+            <td>Заготовка</td>
+          </tr>
+          <tr>
+            <td>Поставщик 2</td>
+            <td>Екатеринбург</td>
+            <td>Категория</td>
+            <td>Телефон/сайт</td>
+            <td>Заготовка</td>
+          </tr>
+          <tr>
+            <td>Поставщик 3</td>
+            <td>Екатеринбург</td>
+            <td>Категория</td>
+            <td>Телефон/сайт</td>
+            <td>Заготовка</td>
+          </tr>
+          <tr>
+            <td>Поставщик 4</td>
+            <td>Екатеринбург</td>
+            <td>Категория</td>
+            <td>Телефон/сайт</td>
+            <td>Заготовка</td>
+          </tr>
+          <tr>
+            <td>Поставщик 5</td>
+            <td>Екатеринбург</td>
+            <td>Категория</td>
+            <td>Телефон/сайт</td>
+            <td>Заготовка</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{{ end }}

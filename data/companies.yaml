@@ -1,0 +1,62 @@
+companies:
+  - name: "Дорожки Урала"
+    category: "paving"
+    rating: 4.9
+    reviews_count: 210
+    description: "Укладка плитки под ключ, сложные рисунки, гарантия 3 года."
+    url: "https://dorozhki-urala.ru"
+  - name: "Плитка-Эксперт"
+    category: "paving"
+    rating: 4.7
+    reviews_count: 160
+    description: "Монтаж площадок и парковок, усиленные основания."
+  - name: "ГранитПроект"
+    category: "paving"
+    rating: 4.6
+    reviews_count: 120
+    description: "Брусчатка, гранит, проекты с высокой нагрузкой."
+  - name: "Зелёный Город"
+    category: "lawn"
+    rating: 4.8
+    reviews_count: 180
+    description: "Рулонный газон, посадки, обслуживание участков."
+  - name: "Садовый Штурм"
+    category: "lawn"
+    rating: 4.7
+    reviews_count: 140
+    description: "Планировка грунта, комплексное озеленение."
+  - name: "ЭкоСад Плюс"
+    category: "lawn"
+    rating: 4.5
+    reviews_count: 110
+    description: "Газоны, автополив, уход за зелёными зонами."
+  - name: "АкваКонтур"
+    category: "drainage"
+    rating: 4.8
+    reviews_count: 130
+    description: "Глубинный дренаж и ливнёвки под ключ."
+  - name: "УралДренажСервис"
+    category: "drainage"
+    rating: 4.6
+    reviews_count: 95
+    description: "Водоотвод, колодцы, обслуживание систем."
+  - name: "Сухой Участок"
+    category: "drainage"
+    rating: 4.5
+    reviews_count: 80
+    description: "Осушение участков, укрепление грунтов."
+  - name: "УралЛандшафт"
+    category: "landscaping"
+    rating: 4.8
+    reviews_count: 175
+    description: "Концепция, проект, реализация и авторский надзор."
+  - name: "Студия Сад и Камень"
+    category: "landscaping"
+    rating: 4.7
+    reviews_count: 140
+    description: "Премиальные участки, сложный рельеф, освещение."
+  - name: "Ботаник Про"
+    category: "landscaping"
+    rating: 4.6
+    reviews_count: 120
+    description: "Проекты в современном и классическом стиле."

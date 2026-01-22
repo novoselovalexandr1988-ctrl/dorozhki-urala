@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-9">
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.description }}</p>
+      <div class="content">
+        {{ .Content }}
+      </div>
+
+      {{ $category := .Params.category }}
+      {{ $companies := where site.Data.companies.companies "category" $category }}
+      <h2>Компании по категории</h2>
+      <div class="row">
+        {{ range $companies }}
+          <div class="col-12 mb-3">
+            <div class="service service-summary">
+              <div class="service-content">
+                <h3 class="service-title">{{ .name }}</h3>
+                <p>{{ .description }}</p>
+                <p><strong>Рейтинг:</strong> {{ .rating }} / 5 · <strong>Отзывы:</strong> {{ .reviews_count }}</p>
+                {{ if .url }}
+                  <a class="button button-primary" href="{{ .url }}" rel="noopener">Сайт компании</a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+
+      <div class="call-to-action">
+        <p>Есть опыт работы с подрядчиком? Помогите обновить рейтинг.</p>
+        <a class="button button-primary" href="/reviews/">Оставить отзыв</a>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

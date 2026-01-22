@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-9">
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.description }}</p>
+      <div class="content">
+        {{ .Content }}
+      </div>
+
+      <h2>Таблица дизайнеров</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Место</th>
+            <th>Дизайнер/студия</th>
+            <th>Описание</th>
+            <th>Ссылка</th>
+            <th>Рейтинг</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $index, $designer := site.Data.designers.designers }}
+            <tr>
+              <td>{{ add $index 1 }}</td>
+              <td>{{ $designer.name }}</td>
+              <td>{{ $designer.description }}</td>
+              <td>
+                {{ if $designer.url }}
+                  <a href="{{ $designer.url }}" rel="noopener">{{ $designer.url }}</a>
+                {{ else }}
+                  —
+                {{ end }}
+              </td>
+              <td>{{ $designer.rating }}</td>
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{{ end }}

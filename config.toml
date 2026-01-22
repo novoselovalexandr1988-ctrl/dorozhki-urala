@@ -32,29 +32,64 @@ theme = "hugo-hero-theme"
     meta_twitter_creator = "@zerostaticio"
 
 [[menu.main]]
-	name = "Services"
-	url = "/services/"
+    name = "Рейтинг"
+    url = "/"
     weight = 1
 
 [[menu.main]]
-    name = "Work"
-    url = "/work/"
+    name = "Категории"
+    identifier = "categories"
+    url = "/categories/"
     weight = 2
 
 [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Укладка тротуарной плитки"
+    url = "/categories/paving/"
+    parent = "categories"
+    weight = 1
+
+[[menu.main]]
+    name = "Озеленение и газон"
+    url = "/categories/lawn/"
+    parent = "categories"
+    weight = 2
+
+[[menu.main]]
+    name = "Дренаж и ливнёвка"
+    url = "/categories/drainage/"
+    parent = "categories"
     weight = 3
 
 [[menu.main]]
-    name = "History"
-    url = "/history/"
-    weight = 3
-
-[[menu.main]]
-    name = "Contact"
-    url = "/contact/"
+    name = "Ландшафт под ключ"
+    url = "/categories/landscaping/"
+    parent = "categories"
     weight = 4
+
+[[menu.main]]
+    name = "Оставить отзыв"
+    url = "/reviews/"
+    weight = 3
+
+[[menu.main]]
+    name = "Статьи"
+    url = "/blog/"
+    weight = 4
+
+[[menu.main]]
+    name = "О проекте"
+    url = "/about/"
+    weight = 5
+
+[[menu.main]]
+    name = "Где покупать материал"
+    url = "/where-to-buy/"
+    weight = 6
+
+[[menu.main]]
+    name = "Рейтинг дизайнеров"
+    url = "/rating/designers/"
+    weight = 7
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
