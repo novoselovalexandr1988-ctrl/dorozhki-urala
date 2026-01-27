@@ -1,0 +1,106 @@
+{{ define "main" }}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-9">
+      {{ .Scratch.Set "breadcrumbs" (slice (dict "title" "Главная" "url" "/rating/") (dict "title" "Оставить отзыв" "url" "")) }}
+      {{ partial "breadcrumbs.html" . }}
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.description }}</p>
+      <div class="content">
+        {{ .Content }}
+      </div>
+
+      <form name="reviews" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="reviews">
+        <p hidden>
+          <label>Don’t fill this out: <input name="bot-field"></label>
+        </p>
+
+        <div class="form-group">
+          <label for="company_select">Компания</label>
+          <select id="company_select" name="company_select" required>
+            <option value="">Выберите компанию</option>
+            {{ range site.Data.companies.companies }}
+              <option value="{{ .name }}">{{ .name }}</option>
+            {{ end }}
+            <option value="other">Другая компания</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="company_other_field" style="display: none;">
+          <label for="company_other">Название другой компании</label>
+          <input id="company_other" name="company_other" type="text" placeholder="Название компании">
+        </div>
+
+        <div class="form-group">
+          <label for="category">Категория (опционально)</label>
+          <select id="category" name="category">
+            <option value="">Не выбрано</option>
+            <option value="paving">Укладка тротуарной плитки</option>
+            <option value="lawn">Озеленение и газон</option>
+            <option value="drainage">Дренаж и ливнёвка</option>
+            <option value="landscaping">Ландшафт под ключ</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="rating">Оценка (1–5)</label>
+          <select id="rating" name="rating" required>
+            <option value="5">5 — отлично</option>
+            <option value="4">4 — хорошо</option>
+            <option value="3">3 — нормально</option>
+            <option value="2">2 — плохо</option>
+            <option value="1">1 — очень плохо</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="review_text">Текст отзыва</label>
+          <textarea id="review_text" name="review_text" rows="6" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="contact">Контакт для обратной связи (не публикуется)</label>
+          <input id="contact" name="contact" type="text" placeholder="Телефон или email">
+        </div>
+
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="agreement" required>
+            Подтверждаю, что отзыв основан на личном опыте и может быть опубликован после модерации.
+          </label>
+        </div>
+
+        <button class="button button-primary" type="submit">Отправить отзыв</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  const companySelect = document.getElementById("company_select");
+  const companyOtherField = document.getElementById("company_other_field");
+
+  if (companySelect && companyOtherField) {
+    companySelect.addEventListener("change", (event) => {
+      companyOtherField.style.display = event.target.value === "other" ? "block" : "none";
+    });
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  const companyParam = params.get("company");
+  if (companyParam && companySelect) {
+    const match = Array.from(companySelect.options).find((option) => option.value === companyParam);
+    if (match) {
+      companySelect.value = companyParam;
+    } else {
+      companySelect.value = "other";
+      companyOtherField.style.display = "block";
+      const otherField = document.getElementById("company_other");
+      if (otherField) {
+        otherField.value = companyParam;
+      }
+    }
+  }
+</script>
+{{ end }}
