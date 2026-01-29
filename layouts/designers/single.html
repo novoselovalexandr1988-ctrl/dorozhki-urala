@@ -16,6 +16,15 @@
             <div class="card-title">{{ add $index 1 }}. {{ $designer.name }}</div>
             <div class="card-meta">{{ $designer.description }}</div>
             <p><strong>Рейтинг:</strong> {{ $designer.rating }} / 5 · <strong>Отзывы:</strong> {{ $designer.reviews_count }}</p>
+            {{ if or $designer.phone $designer.address $designer.schedule }}
+              <p class="card-meta">
+                {{ if $designer.phone }}Телефон: {{ $designer.phone }}{{ end }}
+                {{ if and $designer.phone (or $designer.address $designer.schedule) }} · {{ end }}
+                {{ if $designer.address }}Адрес: {{ $designer.address }}{{ end }}
+                {{ if and $designer.address $designer.schedule }} · {{ end }}
+                {{ if $designer.schedule }}График: {{ $designer.schedule }}{{ end }}
+              </p>
+            {{ end }}
             <div class="card-actions">
               {{ if $designer.url }}
                 <a class="button button-primary" href="{{ $designer.url }}" rel="noopener">Сайт студии</a>

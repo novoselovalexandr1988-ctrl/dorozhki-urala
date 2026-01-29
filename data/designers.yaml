@@ -1,26 +1,70 @@
 designers:
-  - name: "Ланди"
+  - name: "ЛАНДИ — Студия ландшафтного дизайна"
     url: "https://lan-di.ru/"
+    phone: "на сайте"
+    address: "Екатеринбург"
     rating: 4.9
     reviews_count: 128
-    description: "Ландшафтные проекты под ключ, авторский надзор."
-  - name: "Садовая Линия"
-    url: ""
+    description: "Ландшафтный дизайн и проектирование под ключ."
+  - name: "ЗеленГрад"
+    url: "https://zelengrad66.ru"
+    phone: "+7 (904) 380-18-11"
+    rating: 4.8
+    reviews_count: 96
+    description: "Проектирование и ландшафтный дизайн частных участков."
+  - name: "АртХолдинг"
+    url: "https://landdisign.ru"
+    phone: "на сайте (первый выезд бесплатно)"
+    address: "ул. Нагорная, 12"
     rating: 4.7
-    reviews_count: 94
-    description: "Частные участки, современные решения, подбор материалов."
-  - name: "АрхСад"
-    url: ""
+    reviews_count: 82
+    description: "Эскизные проекты, планирование и сопровождение реализации."
+  - name: "Арт 4 сезона"
+    url: "https://art-4season.ru"
+    phone: "на сайте"
+    rating: 4.7
+    reviews_count: 74
+    description: "Проектирование, визуализация и реализация под ключ."
+  - name: "Студия дизайна «Зелёный остров»"
+    url: "https://green-studio66.ru"
+    phone: "+7 (343) 268-84-24"
+    address: "г. Берёзовский, ул. Красных Героев, д. 7А, к. 116"
+    schedule: "Пн–Сб 9:00–19:00"
     rating: 4.6
-    reviews_count: 78
-    description: "Проектирование, визуализации, планировочные решения."
-  - name: "Зелёный Контур"
-    url: ""
+    reviews_count: 69
+    description: "Проектирование, посадки, сопровождение проектов."
+  - name: "МС Ландшафт"
+    url: "https://ekaterinburg.mslandshaft.ru"
+    phone: "+7 (969) 777-41-35"
+    address: "ул. Хохрякова, 10"
+    schedule: "Пн–Пт 08:00–18:00"
+    rating: 4.6
+    reviews_count: 61
+    description: "Ландшафтный дизайн и инженерные решения."
+  - name: "Ландшафтсервис"
+    url: "https://landshaftservis.ru"
+    phone: "на сайте"
     rating: 4.5
-    reviews_count: 66
-    description: "Озеленение и дизайн для сложных рельефов."
-  - name: "Студия Рельеф"
+    reviews_count: 58
+    description: "Проекты участков и реализация благоустройства."
+  - name: "Бюро 37/1"
+    url: "https://b37-1.ru/landshaft/"
+    phone: "+7 (902) 871-59-90"
+    address: "ул. Викулова, 37/1, офис 1"
+    rating: 4.5
+    reviews_count: 53
+    description: "Архитектурное бюро с ландшафтным направлением."
+  - name: "NAT design (Студия Костициной Ксении)"
+    url: "https://natsad.ru"
+    phone: "+7 (922) 188-61-70"
+    address: "ул. Крестинского, 63А, офис 513"
+    rating: 4.5
+    reviews_count: 47
+    description: "Дизайн частных участков и сопровождение реализации."
+  - name: "Студия ландшафта «Белые сады»"
     url: ""
+    phone: "на сайте"
+    address: "ул. Маршала Жукова, 5, офис 402"
     rating: 4.4
-    reviews_count: 52
-    description: "Концепции участков и сопровождение реализации."
+    reviews_count: 39
+    description: "Ландшафтный дизайн и проектирование."
