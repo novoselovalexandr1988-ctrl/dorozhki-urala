@@ -100,22 +100,52 @@ companies:
     rating: 4.5
     reviews_count: 110
     description: "Газоны, автополив, уход за зелёными зонами."
-  - name: "АкваКонтур"
+  - name: "Дорожки Урала"
+    category: "drainage"
+    rating: 5.0
+    reviews_count: 210
+    description: "Дренажные системы под ключ, комплексное благоустройство, гарантия 1 год."
+    url: "https://dorozhki-urala.ru"
+    phone: "+7 (966) 700-01-06, +7 (922) 154-16-16, +7 (900) 033-13-38"
+    email: "novoselov-a-v@mail.ru"
+    address: "г. Екатеринбург, ул. Шварца, 10к1"
+    experience: "с 2014 года"
+    highlight: true
+  - name: "ЛандшафтСити-Урал"
+    category: "drainage"
+    rating: 4.9
+    reviews_count: 178
+    description: "Монтаж дренажных систем, автополив, искусственные водоёмы, гарантия 12 месяцев."
+    url: "https://gazoncity-ural.ru"
+    phone: "+7 (966) 700-01-06, +7 (922) 154-16-16"
+    email: "novoselov-a-v@mail.ru"
+    experience: "с 2014 года"
+  - name: "Дренаж Pro"
     category: "drainage"
     rating: 4.8
-    reviews_count: 130
-    description: "Глубинный дренаж и ливнёвки под ключ."
-    highlight: true
-  - name: "УралДренажСервис"
+    reviews_count: 132
+    description: "Дренаж участка под ключ, индивидуальное проектирование, ГОСТ."
+    url: "https://ekb.drenazh-pro.ru"
+    phone: "на сайте"
+  - name: "ССК — Строительная компания"
+    category: "drainage"
+    rating: 4.7
+    reviews_count: 104
+    description: "Дренаж участка под ключ, договор, работа по СНИПам и ГОСТам."
+    url: "https://stroydom-ekb.ru"
+    phone: "+7 (343) 226-47-15"
+    email: "info@stroydom-ekb.ru"
+    address: "г. Екатеринбург, ул. Красноармейская, 10, оф. 7/04"
+  - name: "Студия дизайна «Зелёный остров»"
     category: "drainage"
     rating: 4.6
-    reviews_count: 95
-    description: "Водоотвод, колодцы, обслуживание систем."
-  - name: "Сухой Участок"
-    category: "drainage"
-    rating: 4.5
-    reviews_count: 80
-    description: "Осушение участков, укрепление грунтов."
+    reviews_count: 69
+    description: "Дренаж под ключ в комплексе ландшафтных работ."
+    url: "https://green-studio66.ru"
+    phone: "+7 (343) 268-84-24"
+    email: "sv2688424@yandex.ru"
+    address: "г. Берёзовский, ул. Красных Героев, д. 7А, к. 116"
+    schedule: "Пн–Сб 9:00–19:00"
   - name: "УралЛандшафт"
     category: "landscaping"
     rating: 4.8
