@@ -18,7 +18,12 @@
   }
 }
 .button-white {
-  background: none;
-  color: #fff;
-  border: 2px solid #fff;
+  background: #ffffff;
+  color: $primary;
+  border: 2px solid $primary;
+  &:hover {
+    background: lighten($primary, 40%);
+    color: $primary;
+    text-decoration: none;
+  }
 }
