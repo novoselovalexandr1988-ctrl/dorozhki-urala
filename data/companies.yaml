@@ -1,21 +1,89 @@
 companies:
   - name: "Дорожки Урала"
     category: "paving"
-    rating: 4.9
+    rating: 5.0
     reviews_count: 210
-    description: "Укладка плитки под ключ, сложные рисунки, гарантия 3 года."
+    description: "Укладка плитки под ключ, 6 бригад, более 50 000 м² выполненных работ, гарантия 1 год."
     url: "https://dorozhki-urala.ru"
+    phone: "+7 (932) 124-65-82, +7 (922) 154-16-16, +7 (900) 033-13-38"
+    email: "novoselov-a-v@mail.ru"
+    address: "г. Екатеринбург, ул. Шварца, 10к1"
+    experience: "с 2013 года"
     highlight: true
-  - name: "Плитка-Эксперт"
+  - name: "ЛандшафтСити-Урал"
+    category: "paving"
+    rating: 4.9
+    reviews_count: 178
+    description: "Бесплатный первый выезд, гарантия 12 месяцев, работы под ключ."
+    url: "https://gazoncity-ural.ru"
+    phone: "+7 (966) 700-01-06, +7 (922) 154-16-16"
+    email: "novoselov-a-v@mail.ru"
+    experience: "с 2014 года"
+  - name: "Храбрая плитка (АРГО-СМ)"
+    category: "paving"
+    rating: 4.8
+    reviews_count: 155
+    description: "Собственное производство, гарантия до 12 месяцев, опыт более 25 лет."
+    url: "https://plitkaekb.ru"
+    phone: "+7 (343) 302-32-02, +7 (343) 288-75-90"
+    email: "mail@plitkaekb.ru"
+    address: "г. Екатеринбург, ул. Блюхера, 58, оф. 530; склад: Свердловская обл., Сысертский р-н, д. Ольховка, ул. Ленина, 39 стр. 1"
+  - name: "Гаммаплит"
     category: "paving"
     rating: 4.7
-    reviews_count: 160
-    description: "Монтаж площадок и парковок, усиленные основания."
-  - name: "ГранитПроект"
+    reviews_count: 140
+    description: "Собственное производство, опыт 20 лет, более 12 000 реализованных проектов."
+    url: "https://interpro66.ru"
+    phone: "+7 (343) 376-77-77"
+  - name: "ХоумСад"
     category: "paving"
     rating: 4.6
-    reviews_count: 120
-    description: "Брусчатка, гранит, проекты с высокой нагрузкой."
+    reviews_count: 118
+    description: "Комплексное благоустройство, гарантийный период."
+    url: "https://ekaterinburg.blago-s.ru"
+    phone: "на сайте"
+    experience: "более 7 лет"
+  - name: "Компания ЛИТ"
+    category: "paving"
+    rating: 4.5
+    reviews_count: 104
+    description: "Работы под ключ с материалами от 1700 руб/м²."
+    url: "https://tro-tuar.ru"
+    phone: "+7 (343) 219-83-93, +7 (343) 219-01-08"
+  - name: "СтройМонтаж"
+    category: "paving"
+    rating: 4.4
+    reviews_count: 92
+    description: "Гарантия 3 года, договор, бесплатная смета."
+    url: "https://ekaterinburg.kamprok.ru"
+    phone: "+7 (958) 578-24-55"
+    address: "г. Екатеринбург, ул. Фронтовых Бригад, 31, 3-й эт., оф. 308/3"
+  - name: "Ukladka-trotuarnoj.ru"
+    category: "paving"
+    rating: 4.3
+    reviews_count: 88
+    description: "6 бригад, гарантия 1 год, возможна рассрочка."
+    url: "https://ukladka-trotuarnoj.ru"
+    phone: "+7 (343) 312-38-34"
+    email: "info@ukladka-trotuarnoj.ru"
+    experience: "с 2013 года"
+  - name: "Завод АВАНТ"
+    category: "paving"
+    rating: 4.2
+    reviews_count: 76
+    description: "Собственное производство плитки, услуги укладки."
+    url: "https://avant-pkf.ru"
+    phone: "+7 (343) 243-58-28"
+    email: "pkfavant@mail.ru"
+    address: "г. Екатеринбург, Елизаветинское шоссе, 29, офис 319"
+    experience: "с 2005 года"
+  - name: "Фабрика IRIS"
+    category: "paving"
+    rating: 4.1
+    reviews_count: 63
+    description: "Производство на линии сухого вибропрессования, разработка проектов."
+    url: "https://ekaterinburg.fabrika-iris.com"
+    phone: "+7 (343) 243-57-67"
   - name: "Зелёный Город"
     category: "lawn"
     rating: 4.8
